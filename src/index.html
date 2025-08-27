@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body class="font-inter">
+    <!-- Navbar Start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="brand px-4">
+            <a
+              href="#hero"
+              class="font-bold text-lg text-primary block py-4 pt-6"
+              >Radifka Faza</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="toggle-hamburger"
+              name="toggle-hamburger"
+              type="button"
+              class="block absolute right-4 z-20 lg:hidden"
+            >
+              <span
+                class="hamburger transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white max-w-[250px] shadow-xl rounded-lg w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:opacity-100"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#hero"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary text-dark"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary text-dark"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#tech"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary text-dark"
+                    >Tech</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#certificate"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary text-dark"
+                    >Certificate</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="text-base py-2 flex mx-8 group-hover:text-primary text-dark"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Section start -->
+    <section id="hero" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2 pc:pl-8">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Hello everyone 😊, I'm
+              <span
+                class="block text-dark text-4xl font-bold mt-1 tracking-wide lg:text-5xl sm:text-3xl"
+              >
+                M. Radifka Faza
+              </span>
+            </h1>
+            <h2
+              class="font-medium text-secondary text-lg mb-5 lg:text-2xl mt-2"
+            >
+              student at
+              <a
+                href="https://maps.app.goo.gl/REBgTdUVgFJWtWXh8"
+                target="_blank"
+                class="text-primary text-xl underline"
+                >SMKN 2 Pekalongan</a
+              >
+            </h2>
+            <p class="font-medium text-slate-400 mb-8 tracking-wide">
+              Portofolio created using
+              <span class="text-secondary font-medium">TailwindCSS</span>
+            </p>
+
+            <a
+              href="#"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-85 transition-all duration-200 mease-in-out"
+              >Contact Me</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-14 lg:mt-9 lg:right-0">
+              <!-- Gambar -->
+              <img
+                src="images/User1.png"
+                alt="Me"
+                class="max-w-full mx-auto relative z-10 sm:scale-75 tablet:scale-75 lg:scale-90"
+              />
+
+              <!-- SVG Background -->
+              <span
+                class="absolute inset-0 flex justify-center items-center -z-10"
+              >
+                <svg
+                  width="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#14b8a6"
+                    opacity="0.75"
+                    d="M46.5,-66.6C60.8,-63.2,73.4,-51.2,71.7,-37.8C70.1,-24.3,54.3,-9.4,47.8,4C41.4,17.3,44.3,29.1,40.7,38C37.2,47,27.3,53,18.5,49.4C9.7,45.8,2,32.5,-4.3,25.6C-10.6,18.8,-15.6,18.3,-23.2,16.3C-30.8,14.3,-40.9,10.8,-47.3,3.4C-53.6,-4,-56.1,-15.4,-53.8,-26.2C-51.5,-37.1,-44.3,-47.4,-34.5,-52.9C-24.7,-58.3,-12.3,-59,1.9,-62C16.1,-64.9,32.2,-70,46.5,-66.6Z"
+                    transform="translate(100 100)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="py-36">
+      <div
+        class="flex items-center text-gray-700 font-semibold text-lg max-w mb-14 px-4 md:px-16"
+      >
+        <div class="h-[2px] bg-gray-400 flex-1"></div>
+        <h4
+          class="uppercase text-primary text-lg font-bold lg:text-2xl text-center mx-3 md:mx-5"
+        >
+          About Me
+        </h4>
+        <div class="h-[2px] bg-gray-400 flex-1"></div>
+      </div>
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h2
+              class="font-semibold text-dark text-2xl mb-5 max-w-md lg:text-3xl"
+            >
+              Let’s collaborate to bring fresh and innovative ideas to life!
+            </h2>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
+              Hi, I'm M. Radifka Faza, a student majoring in Software and Game
+              Development at SMK Negeri 2 Pekalongan. I have a strong passion
+              for design, motion, and application development.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 lg:-mt-10">
+            <h3 class="text-dark text-2xl font-bold mb-4 lg:text-3xl lg:pt-10">
+              Follow Media Social Me
+            </h3>
+            <p
+              class="font-medium text-base text-secondary mb-6 leading-relaxed lg:text-lg"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis doloremque veritatis expedita ducimus officia
+              repudiandae provident error neque.
+            </p>
+            <div class="flex">
+              <!-- Icon Github Start-->
+              <a
+                href="https://github.com/pazaBeginner/"
+                target="_blank"
+                class="w-9 h-9 rounded-full mr-3 flex justify-center items-center border border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  width="20"
+                  class="fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <!-- Icon Github End -->
+
+              <!-- Icon Instagram start -->
+              <a
+                href="https://www.instagram.com/zap0n11/"
+                target="_blank"
+                class="w-9 h-9 rounded-full mr-3 flex justify-center items-center border border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  width="20"
+                  role="img"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+              <!-- Icon Instagram end -->
+
+              <!-- Icon Discord start -->
+              <a
+                href="https://discord.com/channels/1325103367898267688/1325103367898267690"
+                target="_blank"
+                class="w-9 h-9 rounded-full mr-3 flex justify-center items-center border border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  width="20"
+                  class="fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Discord</title>
+                  <path
+                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+                  />
+                </svg>
+              </a>
+              <!-- Icon Discord end -->
+
+              <!-- Icon Discord start -->
+              <a
+                href="https://www.facebook.com/share/15yrr2cUfJ/?mibextid=qi2Omg"
+                target="_blank"
+                class="w-9 h-9 rounded-full mr-3 flex justify-center items-center border border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  width="20"
+                  class="fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Facebook</title>
+                  <path
+                    d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                  />
+                </svg>
+              </a>
+              <!-- Icon Discord end -->
+
+              <!-- Icon LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/muhammad-radifka-faza-2a96a3337/"
+                target="_blank"
+                target="_blank"
+                class="w-9 h-9 rounded-full mr-3 flex justify-center items-center border border-slate-400 hover:border-primary hover:bg-primary hover:text-white"
+                ><svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>LinkedIn</title>
+                  <path
+                    d="M22.23 0H1.77C.79 0 0 .77 0 1.71v20.58C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.71V1.71C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.59c-1.14 0-2.07-.93-2.07-2.07s.93-2.07 2.07-2.07 2.07.93 2.07 2.07-.93 2.07-2.07 2.07zm15.11 12.86h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66h-3.56V9h3.42v1.56h.05c.48-.91 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.47v6.27z"
+                  />
+                </svg>
+              </a>
+              <!-- Icon LinkedIn end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Tech Section  -->
+    <section id="tech" class="pt-5">
+      <div
+        class="flex items-center text-gray-700 font-semibold text-lg max-w px-4 md:px-16"
+      >
+        <div class="h-[2px] bg-gray-400 flex-1"></div>
+        <h4
+          class="uppercase text-primary text-lg font-bold lg:text-2xl text-center mx-3 md:mx-5"
+        >
+          My Tech
+        </h4>
+        <div class="h-[2px] bg-gray-400 flex-1"></div>
+      </div>
+      <div class="container py-3 md:py-9">
+      </div>
+    </section>
+    <!-- Tech Section end -->
+
+    <!-- Certificate Section -->
+    <section id="certificate" class="pt-4 md:pt-10 pb-11">
+      <div
+        class="flex items-center text-gray-700 font-semibold text-lg max-w mb-14 px-4 md:px-16 max-w"
+      >
+        <div class="h-[2px] bg-gray-400 flex-1"></div>
+        <h4
+          class="uppercase text-primary text-lg font-bold lg:text-2xl text-center mx-3 md:mx-5"
+        >
+          Sertificate
+        </h4>
+        <div class="h-[2px] bg-gray-400 flex-1"></div>
+      </div>
+      <div class="container"></div>
+      <div id="show"></div>
+      
+    </section>
+    <!-- Certificate Section end -->
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-8">
+      <div
+        class="flex items-center text-gray-700 font-semibold text-lg max-w px-4 md:px-16 pb-7"
+      >
+        <div class="h-[2px] bg-gray-400 flex-1"></div>
+        <h4
+          class="uppercase text-primary text-lg font-bold lg:text-2xl text-center mx-3 md:mx-5"
+        >
+          Blog
+        </h4>
+        <div class="h-[2px] bg-gray-400 flex-1"></div>
+      </div>
+      <div class="container max-w-[400px] tablet:max-w-2xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl"></div>
+    </section>
+    <!-- Blog Section end -->
+
+    
+    <!-- Footer -->
+    <footer>
+      <div class="content-footer text-center pt-2 pb-7 sm:pt-4 sm:pb-8 text-gray-500 text-[10px] mobileMini:text-[12px] sm:text-[16px] lg:text-[20px]">Copyright &COPY; <span></span> By <a href="https://github.com/pazaBeginner" target="_blank" class="hover:underline hover:underline-offset-2 hover:text-primary transition-all">Radifka Faza</a></div>
+    </footer>
+    <!-- Footer end -->
+    
+    <div class="up hidden md:hidden" >
+      <a href="" class="py-[12px] px-[18px] sm:py-4 sm:px-[22px] fixed bottom-12 right-3 sm:bottom-12 sm:right-2 rounded-full bg-slate-800 text-gray-200"><i class="fa-solid fa-arrow-up-long"></i></a>
+    </div>
+  </body>
+</html>
